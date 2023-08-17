@@ -1,9 +1,22 @@
-p{
-	color:green ;
-	font-size: 30px;
-	text-align: center;
-}
 h1{
 	color: red;
 	text-align: center;
+}
+p{
+	color:darkslateblue ;
+	font-size: 30px;
+	text-align: center;
+	font-family:revert-layer ;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+/*	text-align: justify;*/
+/*	text-decoration: underline;*/
+/*	text-decoration:line-through ;*/
+	letter-spacing: 3px; 
+	word-spacing: 10px;
+}
+img{
+	vertical-align: super;
+
 }
