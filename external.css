@@ -1,8 +1,8 @@
-h1{
+/*h1{
 	color: red;
 	text-align: center;
-}
-p{
+}*/
+ h1,p{
 	color:darkslateblue ;
 	font-size: 30px;
 	text-align: center;
@@ -12,11 +12,15 @@ p{
 	text-transform: uppercase;
 /*	text-align: justify;*/
 /*	text-decoration: underline;*/
-/*	text-decoration:line-through ;*/
-	letter-spacing: 3px; 
+	letter-spacing: 3px;
 	word-spacing: 10px;
+	text-decoration: line-through;
 }
 img{
 	vertical-align: super;
-
 }
+#s{
+	font-size: 25px;
+	color: orange;
+}
+/*id or class ani css maa #f or .f*/
