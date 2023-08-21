@@ -1,9 +1,19 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: content-box;
 }
-.box {
+.box1 {
 	border:20px solid red;
 	padding: 30px;
+	height: 200px;
+	width: 200px;
 	margin: 50px;
+}
+.box2 {
+	border:20px solid red;
+	padding: 30px;
+	height: 200px;
+	width: 200px;
+	margin: 60px;
 }
