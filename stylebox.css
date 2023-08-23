@@ -2,18 +2,47 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: content-box;
+
+	display:flex;
 }
-.box1 {
+
+div.top{
+	display: inline-block;
+}
+div.bottom{
+	display: inline-block;
+}
+
+.boxa{
 	border:20px solid red;
 	padding: 30px;
-	height: 200px;
-	width: 200px;
 	margin: 50px;
+	height:100px;
+	width:100px;
+	overflow: scroll;
+
 }
-.box2 {
-	border:20px solid red;
+
+.boxb{
+	border:20px solid green;
 	padding: 30px;
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
+	margin: 60px;
+}
+
+.boxc{
+	border:20px solid black;
+	padding: 30px;
+	height:100px;
+	width: 100px;
+	margin: 60px;
+}
+
+.boxd{
+	border:20px solid blue;
+	padding: 30px;
+	height: 100px;
+	width: 100px;
 	margin: 60px;
 }
