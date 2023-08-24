@@ -1,0 +1,9 @@
+ul{
+	list-style-position: inside;
+}
+li.first{
+	list-style: decimal;
+}
+li.second{
+	list-style: lower-roman;
+}
