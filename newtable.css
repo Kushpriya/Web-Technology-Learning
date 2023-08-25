@@ -1,6 +1,17 @@
-table{
+table
+{
     border-style: solid;
     border-width: 1px;
-    background-color: yellow;
+    background-color: rgb(153, 43, 226);
     font-family: Arial, Helvetica, sans-serif;
+    border-collapse:collapse ;
+    height: 200px;
+    width: 200px;
+    /* empty-cells: hide; */
+}
+tr,td{
+     border: 1px solid rgb(5, 35, 16); 
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
 }
