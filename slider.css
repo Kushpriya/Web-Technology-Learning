@@ -1,0 +1,39 @@
+body{
+    background-color: aqua;
+
+}
+h1{
+    text-align: center;
+
+}
+.slider{
+    height: 600px ;
+    width: 700px;
+    background-image: url(https://images.pexels.com/photos/17070405/pexels-photo-17070405/free-photo-of-exterior-of-the-city-palace.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+    );
+    position: absolute;
+    transform: translate(50%);
+    animation: slide 20s infinite linear;
+    box-sizing: border-box;
+    box-shadow:4px 4px 20px 20px black;
+
+}
+@keyframes slide {
+    0%{
+background-image: url(https://images.pexels.com/photos/17070405/pexels-photo-17070405/free-photo-of-exterior-of-the-city-palace.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+);
+    }
+    25%{
+        background-image: url(https://images.pexels.com/photos/9444052/pexels-photo-9444052.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+
+        );
+    }
+    50%{
+        background-image: url(https://images.pexels.com/photos/14339802/pexels-photo-14339802.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+        );
+
+    }
+    75%{
+        background-image: url(https://images.pexels.com/photos/18179357/pexels-photo-18179357/free-photo-of-mood.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    }
+}
