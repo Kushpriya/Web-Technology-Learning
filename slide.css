@@ -1,0 +1,41 @@
+body{
+    background-color: aqua;
+    display: grid;
+}
+.container{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    
+}
+.Slide-container{
+    display: flex;
+    width: 500px;
+    animation: slide 20s infinite linear;
+}
+@keyframes slide{
+    0%{
+        transform:translatex(0);
+
+    }
+    100%{
+        transform:translate(-1000px);
+    }
+}
+.Slide-image{
+    padding: 20px;
+    perspective: 100px;
+    box-shadow:4px 4px 20px 10px black;
+
+}
+img{
+    width: 500px;
+    height: 500px;
+    transition: transform 1s;
+
+}
+img:hover{
+    transform: translateZ(20px);
+}
