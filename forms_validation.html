@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <label>Username:</label>
+    <input type="text" id="username"><br><br>
+    <label>Password:</label>
+    <input type="text" id="password"><br><br>
+    <button onclick="login()">Login</button>
+    <script>
+        // alert("Hi");
+        // var a = prompt("Type Y for yes and N for No ");
+        // if(a == "Y"){
+        //     alert('You are right');
+        //     }else{alert('Wrong Answer')
+        // } 
+        // console.log(a);
+        var a = document.getElementById('username');
+        var b = document.getElementById('password');
+        function login(){
+            if(a.value.length < 6){
+                alert("Username should be at least 6 characters");
+                return false;
+            }
+            else if(b.value.length < 6){
+                alert("Password is short");
+                b.value="";
+                b.style.border = "2px solid red";
+                return false;
+            }else{
+                return true;
+            }
+        }
+        
+    </script>
+</body>
+</html>
