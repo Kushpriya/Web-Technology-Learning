@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <label>Email:</label>
+    <input type="text" id="gmail" placeholder="Enter your Email">
+    <br><br>
+    <button onclick="login()">Submit</button>
+
+    <script>
+        function login(){
+        var a = document.getElementById("gmail").value;
+        var regExp = /^([a-z A-Z 0-9\._-]+)@([a-z 0-9]+.)([a-z]+.)([a-z]?)$/
+       
+        
+            if(regExp.test(a))
+            {
+                alert("valid email");
+                return false;
+            }
+            else{
+                alert("Invalid email...Please try again!!!");
+                return true;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
