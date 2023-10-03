@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate</title>
+</head>
+<body>
+    <label>Username: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="username" placeholder="Enter your name"><br><br>
+    <label>Phone Number: </label>
+    <input type="text" id="number" placeholder="Enter a number"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="submit()">Submit</button>
+
+    
+    <script>
+        function submit(){
+            var a = document.getElementById('username').value;
+             var b = document.getElementById('number').value;
+
+            var regExp =/^([a-z A-Z 0-9 \._-]+)$/
+            var regExp1 = /^[0-9]+$/
+             
+            var isValidUsername = regExp.test(a);
+            var isValidPhoneNumber = regExp1.test(b);
+
+            if (isValidUsername && isValidPhoneNumber) {
+                alert("Valid username and phone number");
+            }
+            else if (isValidUsername) {
+                alert("Valid username");
+            }
+            else if (isValidPhoneNumber) {
+                alert('Valid phone number');
+            }
+            else {
+                alert("Invalid username and phone number");
+            }
+        }
+    </script>
+</body>
+</html>
